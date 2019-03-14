@@ -340,6 +340,7 @@ figure {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+
 .container {
   /* border: 1px solid red; */
   max-width: 1000px;
@@ -352,8 +353,25 @@ figure {
   flex-wrap: inherit; 
 }
 
+ 
+
 @media screen and (max-width:1024px){
 
+  .contact > .container{
+    
+    display: flex;
+    flex-direction: column;
+    padding-bottom:2em;
+  }
+
+  .contact > .container > .form-email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+  }
+
+ 
 }
  
  
@@ -431,15 +449,26 @@ figure {
   }
 
 
+  .footer .container{
+    display: flex;
+    flex-direction: column;
+  }
 
 }
 
 @media screen and (max-width:480px){
   
-.event{
-    width: 98%;
-    margin: 10px 1%;
-}
+  .event{
+      width: 98%;
+      margin: 10px 1%;
+  }
+
+  body > footer > div > div:nth-child(1) > p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 
 }
 
