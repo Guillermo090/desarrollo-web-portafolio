@@ -118,6 +118,9 @@ h2 {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+
+
 .project-course,
 .project-date,
 .project-url {
@@ -132,6 +135,9 @@ h2 {
 /* .project-date {
   margin: 10px 0;
 } */
+
+
+
 
 .project-title {
   font-size: 30px;
@@ -236,15 +242,16 @@ figure {
   margin-left: 20px;
 }
 .event { 
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
+
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
   background: #f4fbff;
 }
 .event img {
-  width: 480px;
+  width: 100%;
   height: 200px;
   object-fit: cover;
 }
@@ -377,6 +384,12 @@ figure {
     display: block;
   }
 
+  #portafolio > .container > h2{
+
+    text-align: center;
+  
+  }
+
 
   .project-imageContainer{
     width:auto;
@@ -390,23 +403,44 @@ figure {
 
   .project-title{
     font-size:1.5em;  
+    text-align: center;
   }
   .project-url{
-    font-size:1em;
+    font-size:1.5em;
   }
   .project-course{
     font-size:1em;
+    text-align: center;
   }
   .project-date{
     font-size:1em;
   }
   .project-description{
     font-size: 1em;
+    text-align: justify;
   }
+  .event-list > .container {
+    
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .event{
+    width: 75%;
+  }
+
+
+
 }
 
 @media screen and (max-width:480px){
   
+.event{
+    width: 98%;
+    margin: 10px 1%;
+}
+
 }
 
 @media screen and (max-width:320px){
